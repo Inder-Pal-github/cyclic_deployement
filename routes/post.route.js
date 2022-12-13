@@ -6,7 +6,7 @@ const postRouter = Router();
 postRouter.get("/", async (req, res) => {
   // we need something to verify which posts to send to user. => token is for authorization  => userId => to send his/her posts
 
-  res.send("all posts");
+  res.json({message:"all posts"})
 });
 postRouter.post("/new", async (req, res) => {
   try {
